@@ -11,6 +11,7 @@ import { DateCountPipe } from './date-count.pipe';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GoalFormComponent } from './goal-form/goal-form.component';
 // import { FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,8 +26,8 @@ import { GoalFormComponent } from './goal-form/goal-form.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule
-    // FormsModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
     <h2 class="text-center">Create a new Goal</h2>
     <hr>
     <form> 
@@ -19,8 +19,9 @@
             <input type='date' id="complete" required>
   
         </div>
+        <button type="submit" class="btn btn-success">Add Goal</button>
     </form>
-  </div>
+  </div> -->
 
   <!-- <div class="container-fluid">
     <h2 class="text-center">Create a new Goal</h2>
@@ -33,12 +34,12 @@
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
               <p>Name is required</p>
             </div>
-        </div> -->
-<!-- 
+        </div> --> 
+
         <div class="container-fluid">
             <h2 class="text-center">Create a new Goal</h2>
             <hr>
-            <form #goalForm='ngForm'>
+            <form (ngSubmit)='submitGoal()' #goalForm='ngForm'>
                 <div class="form-group">
           
                     <label for="name">Name</label>
@@ -65,4 +66,4 @@
                 </div>
                 <button type="submit" class="btn btn-success">Add Goal</button>
             </form>
-          </div> -->
+          </div>
